@@ -12,7 +12,7 @@ This is a Discord bot that monitors specified YouTube channels and notifies a de
 ## Requirements
 - Python 3.8+
 - A Google Cloud API Key with YouTube Data API access.
-- A Discord bot token.
+- A Discord bot token (You have to create a discord app on the discord development portal to get a token)
 - Required Python packages:
   - `google-api-python-client`
   - `discord.py`
