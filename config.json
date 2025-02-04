@@ -1,0 +1,7 @@
+{
+    "disco_token": "YOUR DISCORD APP'S TOKEN",
+    "channel_id": "SERVER'S CHANNEL ID IN WHICH THE BOT SENDS NOTIFICATIONS",
+    "time_interval": "THE TIME INTERVAL YOUR BOT WILL WAIT FOR UNTIL CHECKING FOR NEW YOUTUBE UPDATES",
+    "application_id": "YOUR APPLICATION'S ID",
+    "youtube_token": "YOUTUBE API TOKEN"
+}
