@@ -22,7 +22,7 @@ This is a Discord bot that monitors specified YouTube channels and notifies a de
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yt_notify_discoBot.git
+   git clone https://github.com/sngr0x0/yt_notify_discoBot.git
    cd yt_notify_discoBot
    ```
 2. Install dependencies:
