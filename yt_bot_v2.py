@@ -5,10 +5,8 @@
 
 """
 This is a Discord bot that keeps an eye on your favorite YouTube channels and notifies a server channel
-whenever a new video is uploaded.
-In this version:
-1. App's users can pass their youtube channels' handles themselves instead of hardcoding them.
-2. Handles are uses to get youtube channels' IDs so users doesn't have to deal with any of this.
+whenever a new video is uploaded. All you need to do is to provide youtube channels handles and it'll do the rest.
+You also need to create a discord applciation on the discord development port before you can use this code.
 
 Note that youtube handle is the word that comes after the @ symbol on a youtube channel main page.
 If you entered a handle for youtube channel that doesn't exist, the bot won't acknowledge that.
@@ -26,8 +24,7 @@ import argparse
 parser = argparse.ArgumentParser(
     description=(
         "A Discord bot that monitors YouTube channels for new video uploads. \n"
-        "Users can specify channel handles instead of hardcoding channel IDs. \n"
-        "The bot retrieves each channel's unique ID based on the provided handles \n"
+        "The bot retrieves each channel's global 'uploads' playlist based on the provided handles \n"
         "and continuously checks for new uploads, sending notifications to a Discord server channel."
     ),
     epilog="first_bot_v2.py --handles fireship mrbeast premierleague beINSPORTS"
@@ -36,7 +33,7 @@ parser.add_argument(
     "--handles", 
     required= True, 
     nargs='+',
-    metavar= "Fireship MrBeast leagueoflegends fortnite freecodecamp",
+    metavar= "ytChannel_1 ytChannel_2 ytChannel_3 ytChannel_n",
     help="Pass the handles of youtube channels that you want to monitor."
     )
 args = parser.parse_args()
